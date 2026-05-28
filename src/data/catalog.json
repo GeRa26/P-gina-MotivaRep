@@ -1,0 +1,56 @@
+[
+  {
+    "id": "azeite-oliva-extra-virgem-premium",
+    "nome": "Azeite de Oliva Extra Virgem Premium",
+    "categoria": "Óleos e Azeites",
+    "descricao": "Azeite de oliva extra virgem de primeira prensagem a frio, com acidez máxima de 0,5%. Ideal para restaurantes, redes de supermercados e distribuidoras que buscam qualidade superior e margem competitiva. Embalagem em vidro escuro que preserva as propriedades organolépticas do produto.",
+    "marca": "Olivar Gold",
+    "imagem": "/images/azeite-oliva.png",
+    "especificacoes": {
+      "pesoUnitario": "500ml",
+      "unidadesPorCaixa": 12,
+      "pesoPorCaixa": "7,2kg",
+      "caixasPorPallet": 80,
+      "shelfLife": "18 meses",
+      "armazenamento": "Ambiente seco e arejado, ao abrigo da luz solar direta",
+      "volumeMinimo": "20 caixas"
+    },
+    "destaque": true
+  },
+  {
+    "id": "arroz-tipo1-longo-fino",
+    "nome": "Arroz Tipo 1 Longo Fino",
+    "categoria": "Grãos e Cereais",
+    "descricao": "Arroz beneficiado tipo 1, grãos longos e finos, com seleção eletrônica que garante uniformidade e baixo índice de quebrados. Produto de alta rotatividade, ideal para atacadistas e redes varejistas. Disponível em embalagens de 1kg e 5kg.",
+    "marca": "Safra Nobre",
+    "imagem": "/images/arroz-tipo1.png",
+    "especificacoes": {
+      "pesoUnitario": "5kg",
+      "unidadesPorCaixa": 6,
+      "pesoPorCaixa": "30kg",
+      "caixasPorPallet": 48,
+      "shelfLife": "12 meses",
+      "armazenamento": "Ambiente seco, fresco e ventilado, longe de produtos químicos",
+      "volumeMinimo": "50 caixas"
+    },
+    "destaque": true
+  },
+  {
+    "id": "molho-tomate-tradicional",
+    "nome": "Molho de Tomate Tradicional",
+    "categoria": "Conservas e Molhos",
+    "descricao": "Molho de tomate elaborado com tomates selecionados, sem conservantes artificiais. Formulação pronta para uso, ideal para food service e consumo doméstico. Embalagem sachê stand-up com tampa dosadora que reduz desperdício e facilita o armazenamento.",
+    "marca": "Sabor da Terra",
+    "imagem": "/images/molho-tomate.png",
+    "especificacoes": {
+      "pesoUnitario": "340g",
+      "unidadesPorCaixa": 24,
+      "pesoPorCaixa": "8,8kg",
+      "caixasPorPallet": 100,
+      "shelfLife": "12 meses",
+      "armazenamento": "Ambiente seco e fresco. Após aberto, conservar sob refrigeração",
+      "volumeMinimo": "30 caixas"
+    },
+    "destaque": true
+  }
+]

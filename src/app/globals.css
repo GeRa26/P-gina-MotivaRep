@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================
+   MOTIVA REPRESENTAÇÕES COMERCIAIS
+   Design System — Paleta corporativa da logo
+   Cores: Azul Ciano, Cinzas, Preto
+   ============================================ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --- Brand Colors (extraídas da logo) --- */
+  --color-brand-blue: #2CA5D1;
+  --color-brand-blue-dark: #1E8AB0;
+  --color-brand-blue-light: #E8F6FB;
+  --color-brand-gray-dark: #3D3D3D;
+  --color-brand-gray-medium: #6B6B6B;
+  --color-brand-gray-light: #F5F5F7;
+  --color-brand-black: #1A1A1A;
+  --color-brand-white: #FFFFFF;
+
+  /* --- Semantic Tokens --- */
+  --color-background: var(--color-brand-white);
+  --color-foreground: var(--color-brand-black);
+  --color-muted: var(--color-brand-gray-light);
+  --color-muted-foreground: var(--color-brand-gray-medium);
+  --color-primary: var(--color-brand-blue);
+  --color-primary-dark: var(--color-brand-blue-dark);
+  --color-primary-light: var(--color-brand-blue-light);
+
+  /* --- Typography --- */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* --- Spacing & Layout --- */
+  --container-max: 1280px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* ============================================
+   FOCUS & ACCESSIBILITY
+   ============================================ */
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   SCROLLBAR (Webkit)
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-gray-medium);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-gray-dark);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out both;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out both;
+}
+
+/* Stagger delays para itens de grid */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
